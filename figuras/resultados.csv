@@ -1,0 +1,5 @@
+modelo,parametros,train_accuracy,test_accuracy
+1_lineal,7850,0.8645,0.8459
+2_oculta_128,101770,0.9153,0.879
+3_profundo_dropout,235146,0.8816,0.8779
+4_cuello_2d,100768,0.8873,0.8562

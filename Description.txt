@@ -1,0 +1,24 @@
+Introducción a visión computacional.
+
+Entrenar una red neuronal para alguno de los dos problemas:
+EMNIST
+         import tensorflow_datasets as tfds
+         train_ds, test_ds = tfds.load(
+'emnist/byclass',
+split=['train', 'test'],
+shuffle_files=True,
+as_supervised=True,
+batch_size=32,	
+)
+
+Fashion-MNIST
+         import tensorflow_datasets as tfd
+         train_ds, test_ds = tfds.load(
+'fashion_mnist',
+split=['train', 'test'],
+shuffle_files=True,
+as_supervised=True,
+batch_size=32,
+)
+
+Usar Flatten y graficar en 2d, probar al menos 3 configuraciones diferentes y medir accuracy como métrica.
